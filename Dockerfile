@@ -13,4 +13,4 @@ VOLUME "/workspace"
 # Install logstash 2.1.0 into /usr/local/logstash-2.1.0
 RUN mkdir -p /usr/local/logstash-2.1.0 
 RUN curl -L https://download.elastic.co/logstash/logstash/logstash-all-plugins-2.1.0.tar.gz | tar xz -C /usr/local/logstash-2.1.0 --strip-components 1
-RUN ( cd /usr/local/logstash-2.1.0 && bin/plugin install --development
+RUN ( cd /usr/local/logstash-2.1.0 && bin/plugin install --development )
